@@ -1,19 +1,7 @@
 # Programação Competitiva
 
 Repositório com resumos e algoritmos utilizados no âmbito competitivo.
-
-Resumos
-------------
-
-- [Algoritmos](C++/Algoritmos/)
-- [DP](C++/DP/)
-- [Estruturas de Dados](C++/ED/)
-- [Grafos](C++/Grafos/)
-- [Matemática](C++/Math/)
-- [Geometria](C++/Geometria/)
-- [Strings](C++/Strings/)
-- [Misc](C++/Misc)
-- [Numeric](C++/Numeric/)
+Créditos ao @Tiagosf00 pela criação do código para geração do PDF do Notebook. [Repositório original](https://github.com/Tiagosf00/Competitive-Programming)
 
 Gerando notebook
 ----------------------
