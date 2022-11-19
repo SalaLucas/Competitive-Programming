@@ -35,8 +35,6 @@ int sum(int l, int r) {
 
 
     /*  MAIN
-    *   Recebe entrada e
-    *   aloca no array a
-    *   int delta = newValue-a[pos+1];
+    *   Recebe entrada e aloca no array a
     */
-   
+    int delta = newValue-a[pos+1];

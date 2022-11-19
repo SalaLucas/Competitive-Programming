@@ -1,4 +1,6 @@
-#define sws std::ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define sws std::ios::sync_with_stdio(false);
+cin.tie(NULL);
+cout.tie(NULL);
 #define input(x) for (auto &it : x) cin >> it;
 #define output(x) for (auto &it : x) cout << it << ' ';
 #define rep(i, a, b) for (int i = a; i < b; i++)
