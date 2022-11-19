@@ -1,44 +1,27 @@
-#include <bits/stdc++.h>
- 
-#define endl "\n"
-#define pb push_back
-#define ll long long
-#define vi vector<int>
- 
-using namespace std;
- 
-const double PI = acos(-1);
-typedef pair<int,int> pii;
-
-class DSU
-{
+class DSU {
     vector<int> parent;
     vector<int> card;
     
 public:
-    DSU(int n): parent(n+1), card(n+1,1)
-    {
+    DSU(int n): parent(n+1), card(n+1,1) {
         for(int i = 1; i <= n; i++)
             parent[i] = i;
     }
 
     /* O(log n) */
-    int find_set(int x)
-    {
+    int find_set(int x) {
         if(x == parent[x])
             return x;
         
         return parent[x] = find_set(parent[x]);
     }
 
-    bool same_set(int a, int b)
-    {
+    bool same_set(int a, int b) {
         return find_set(a) == find_set(b);
     }
 
     /* O(log n) */
-    void join_sets(int a, int b)
-    {
+    void join_sets(int a, int b) {
         a = find_set(a);
         b = find_set(b);
         
@@ -49,9 +32,3 @@ public:
         parent[b] = a;
     }
 };
-
-int main(){
-
-    // Cria 5 conjuntos contendo 1 elemento cada: {1}, {2}, {3}, {4} e {5}
-    DSU conj(5);
-}
