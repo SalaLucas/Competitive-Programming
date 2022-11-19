@@ -34,27 +34,9 @@ int sum(int l, int r) {
 }
 
 
-int32_t main() {
-    /* Recebe entrada e
-    *  aloca no array a
+    /*  MAIN
+    *   Recebe entrada e
+    *   aloca no array a
+    *   int delta = newValue-a[pos+1];
     */
    
-    build(a);
-
-    for(int i=0; i<m; i++) {
-        int op;
-        cin >> op;
-        if(op == 1) {
-            int pos, newValue;
-            cin >> pos >> newValue;
-            int delta = newValue-a[pos+1];
-            a[pos] = newValue;
-            update(pos, delta);
-        }
-        else {
-            int l, r;
-            cin >> l >> r;
-            cout << sum(1, r) << '\n';
-        }
-    }
-}
