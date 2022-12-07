@@ -1,5 +1,4 @@
-string LCSubStr(string X, string Y)
-{
+string LCSubStr(string X, string Y){
     int m = X.size();
     int n = Y.size();
   

@@ -1,21 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-#define sws ios_base::sync_with_stdio(false);cout.tie(NULL);cin.tie(NULL);
-#define mp make_pair
-#define pb push_back
-#define rep(i, a, b) for (int i = a; i < b; i++)
-#define dbg(msg,x) cout<<msg<<" "<<x<<endl;
-#define output(x) for(auto c:x){cout<<c<<" ";}cout<<" ";
-#define ll unsigned long long 
-#define ff first
-#define ss second
-typedef vector<int> vi;
-typedef pair<int, int> pii;
-typedef vector<pair<int,int> > vpp;
-const int MAXN = (int)1e5;
-vpp adj[MAXN];
-vi aux[MAXN];
-
 void dfs(int v,bool visited[],vi* ans){
     visited[v]=true;
     for(int c:aux[v]){
@@ -103,13 +85,3 @@ int main(){
     rep(i,1,n+1)cout<<dp[i]<<" ";
     
 }
-
-// Sample
-// 5 7
-// 1 2 3
-// 1 3 5    
-// 3 2 2 
-// 3 4 2
-// 2 4 4 
-// 2 5 8
-// 4 5 1

@@ -6,12 +6,11 @@ void addi(string s){
     for(int i =0;i<s.size();i++){
         if(trie[no][s[i]-'a'] == 0){
             trie[no][s[i]-'a'] = idx;
-            filhos[no]++; 
             idx++;
         }
         no = trie[no][s[i]-'a'];
         if(i == s.size()-1){
-            acabou[no] = 1;
+            finish[no] = 1;
         }
     }
 }
